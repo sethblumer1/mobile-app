@@ -24,7 +24,7 @@ function BackgroundComp() {
         display={'flex'}
         justifyContent={'center'}
         alignItems={'center'}
-        minHeight={'75%'}
+        minHeight={'70%'}
         bgColor={'white'}
         backgroundImage={'url(https://i.ibb.co/4jvCpxP/people-planking.jpg)'}
         backgroundSize={'cover'}
@@ -61,7 +61,6 @@ function BackgroundComp() {
         bgColor={'#003E5B'}
         display={'flex'}
         justifyContent={'center'}
-        minHeight={'17%'}
         flex={'1 1 auto'}
         color="whiteAlpha.900"
         // display="flex"
@@ -71,7 +70,7 @@ function BackgroundComp() {
       >
         <Flex
           flexDirection={'column'}
-          height={'100%'}
+          maxHeight={'75%'}
           justifyContent={'space-evenly'}
           alignItems={'center'}
         >
