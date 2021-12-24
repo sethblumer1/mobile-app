@@ -70,7 +70,7 @@ function BackgroundComp() {
       >
         <Flex
           flexDirection={'column'}
-          maxHeight={'75%'}
+          minHeight={'75%'}
           justifyContent={'space-evenly'}
           alignItems={'center'}
         >
