@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/mobile-app/static/js/main.313fa060.js",
+    "main.js": "/mobile-app/static/js/main.b6ca364f.js",
     "static/js/377.efc2e2ba.chunk.js": "/mobile-app/static/js/377.efc2e2ba.chunk.js",
     "index.html": "/mobile-app/index.html",
-    "main.313fa060.js.map": "/mobile-app/static/js/main.313fa060.js.map",
+    "main.b6ca364f.js.map": "/mobile-app/static/js/main.b6ca364f.js.map",
     "377.efc2e2ba.chunk.js.map": "/mobile-app/static/js/377.efc2e2ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.313fa060.js"
+    "static/js/main.b6ca364f.js"
   ]
 }
