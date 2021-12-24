@@ -7,15 +7,34 @@ import {
   VStack,
   Code,
   Grid,
+  Flex,
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import NavMobile from './NavbarComps/NavMobile';
+import BackgroundComp from './BodyComps/BackgroundComp';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
+      <Flex
+        textAlign="center"
+        fontSize="xl"
+        minH={'100vh'}
+        minW={'100vw'}
+        flexDirection={'column'}
+      >
+        <NavMobile />
+        <BackgroundComp />
+      </Flex>
+    </ChakraProvider>
+  );
+}
+
+export default App;
+
+{
+  /* <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
@@ -34,9 +53,20 @@ function App() {
             </Link>
           </VStack>
         </Grid>
-      </Box>
-    </ChakraProvider>
-  );
+      </Box> */
 }
 
-export default App;
+{
+  /* <Box
+          p={4}
+          flex={'1 1 auto'}
+          height={'100%'}
+          bgColor={'white'}
+          backgroundImage={'url(https://i.ibb.co/4jvCpxP/people-planking.jpg)'}
+          backgroundSize={'cover'}
+          backgroundPosition={'center center'}
+        >
+          {' '}
+          Main Content Here
+        </Box> */
+}
