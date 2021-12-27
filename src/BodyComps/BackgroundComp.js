@@ -37,7 +37,7 @@ function BackgroundComp() {
         <Flex
           height={'75%'}
           w={'100%'}
-          justifyContent={'space-between'}
+          justifyContent={'space-around'}
           alignItems={'center'}
           //   border={'2px solid black'}
           flexDirection={'column'}
@@ -74,7 +74,7 @@ function BackgroundComp() {
           justifyContent={'space-evenly'}
           alignItems={'center'}
         >
-          <Text fontSize={'md'} fontWeight={'bold'}>
+          <Text fontSize={'lg'} fontWeight={'bold'}>
             NY'S LARGEST WEIGHT LOSS PRACTICE
           </Text>
           <List spacing={2}>
