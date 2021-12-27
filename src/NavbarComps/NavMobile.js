@@ -6,6 +6,8 @@ import {
   HStack,
   Link,
   IconButton,
+  Image,
+  Text,
   Button,
   Menu,
   MenuButton,
@@ -71,7 +73,41 @@ export default function NavMobile() {
                 <NavLink key={link}>{link}</NavLink>
               ))}
             </HStack>
+            {/* <Text>Medical Weight Control</Text> */}
           </HStack>
+          <Flex alignItems={'center'} justifyContent={'center'} width={'100%'}>
+            <Menu>
+              <Avatar
+                size={'md'}
+                src={'https://i.ibb.co/1n9SxFS/weight-md-new-Logo-no-Bg.png'}
+                bg={'transparent'}
+              />
+            </Menu>
+            <Text fontSize={'sm'} fontWeight={'bold'} color={'#003E5B'}>
+              Medical Weight Control
+            </Text>
+          </Flex>
+
+          <Button borderRadius={'8px'} padding={0}>
+            <Image
+              src="https://www.freeiconspng.com/uploads/spain-flag-icon-10.png"
+              width={'25px'}
+            />
+          </Button>
+          {/* <Flex alignItems={'center'}>
+            <Menu>
+              <Avatar
+                size={'md'}
+                src={'https://i.ibb.co/1n9SxFS/weight-md-new-Logo-no-Bg.png'}
+                bg={'transparent'}
+              />
+            </Menu>
+            <Text fontSize={'md'} fontWeight={'bold'}>
+              Medical Weight Control
+            </Text>
+          </Flex> */}
+
+          {/* 
           <Flex alignItems={'center'}>
             <Menu>
               <Avatar
@@ -80,7 +116,7 @@ export default function NavMobile() {
                 bg={'transparent'}
               />
             </Menu>
-          </Flex>
+          </Flex> */}
         </Flex>
 
         {isOpen ? (

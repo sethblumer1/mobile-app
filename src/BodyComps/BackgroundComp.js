@@ -26,7 +26,7 @@ function BackgroundComp() {
         alignItems={'center'}
         minHeight={'70%'}
         bgColor={'white'}
-        backgroundImage={'url(https://i.ibb.co/4jvCpxP/people-planking.jpg)'}
+        backgroundImage={'url(https://i.ibb.co/Dw13KCt/scale-more-faded.png)'}
         backgroundSize={'cover'}
         backgroundPosition={'center center'}
       >
@@ -42,7 +42,7 @@ function BackgroundComp() {
           //   border={'2px solid black'}
           flexDirection={'column'}
         >
-          <Text fontWeight={'bold'} fontSize={'2xl'}>
+          <Text fontWeight={'bold'} fontSize={'2xl'} color={'#003E5B'}>
             Make the change today.
           </Text>
           {/* <Button
