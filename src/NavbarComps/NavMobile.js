@@ -24,7 +24,6 @@ const Links = [
   'Home',
   'Locations & Hours',
   'Meet Our Doctors',
-  'Locations',
   'Tips & Tricks',
   'BMI Calculator',
 ];
