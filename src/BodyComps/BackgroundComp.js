@@ -16,6 +16,7 @@ import {
 } from '@chakra-ui/react';
 import { CheckIcon } from '@chakra-ui/icons';
 import Consultation from './Consultation';
+import Locations from './Locations';
 function BackgroundComp() {
   return (
     <Flex h={'100vh'} flexDirection={'column'}>
@@ -26,7 +27,7 @@ function BackgroundComp() {
         alignItems={'center'}
         minHeight={'60%'}
         bgColor={'white'}
-        backgroundImage={'url(https://i.ibb.co/h9Z5FB3/weight.jpg)'}
+        backgroundImage={'url(https://i.ibb.co/x3GDmQb/mobile-fruit-bg.jpg)'}
         backgroundSize={'cover'}
         backgroundPosition={'bottom center'}
         // backgroundPosition={'200px'}
@@ -71,29 +72,32 @@ function BackgroundComp() {
       >
         <Flex
           flexDirection={'column'}
-          minHeight={'75%'}
-          justifyContent={'space-evenly'}
+          justifyContent={'center'}
           alignItems={'center'}
+          flexDirection={'row'}
         >
-          <Text fontSize={'lg'} fontWeight={'bold'}>
-            NY'S LARGEST WEIGHT LOSS PRACTICE
-          </Text>
-          <List spacing={2}>
-            <ListItem fontSize={'sm'}>
-              <ListIcon as={CheckIcon} color="green.500" />
-              Over 18k patients treated
-            </ListItem>
+          <Flex flexDirection={'column'}>
+            <Text fontSize={'lg'} fontWeight={'bold'}>
+              NY'S LARGEST WEIGHT LOSS PRACTICE
+            </Text>
+            <List spacing={2}>
+              <ListItem fontSize={'sm'}>
+                <ListIcon as={CheckIcon} color="green.500" />
+                Over 18k patients treated
+              </ListItem>
 
-            <ListItem fontSize={'sm'}>
-              <ListIcon as={CheckIcon} color="green.500" />
-              50 years of service to the community
-            </ListItem>
+              <ListItem fontSize={'sm'}>
+                <ListIcon as={CheckIcon} color="green.500" />
+                50 years of service to the community
+              </ListItem>
 
-            <ListItem fontSize={'sm'}>
-              <ListIcon as={CheckIcon} color="green.500" />4 convenient
-              locations in NY area
-            </ListItem>
-          </List>
+              <ListItem fontSize={'sm'}>
+                <ListIcon as={CheckIcon} color="green.500" />4 convenient
+                locations in NY area
+              </ListItem>
+            </List>
+            {/* <Locations /> */}
+          </Flex>
         </Flex>
       </Box>
     </Flex>
