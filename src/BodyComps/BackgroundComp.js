@@ -24,7 +24,7 @@ function BackgroundComp() {
         display={'flex'}
         justifyContent={'center'}
         alignItems={'center'}
-        minHeight={'70%'}
+        minHeight={'60%'}
         bgColor={'white'}
         backgroundImage={'url(https://i.ibb.co/Dw13KCt/scale-more-faded.png)'}
         backgroundSize={'cover'}
