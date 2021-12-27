@@ -42,6 +42,7 @@ function Consultation() {
         rounded={'full'}
         color={'white'}
         _hover={{ bg: 'green.500' }}
+        size={'lg'}
       >
         Request consultation
       </Button>

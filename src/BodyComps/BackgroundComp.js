@@ -13,10 +13,14 @@ import {
   List,
   ListItem,
   ListIcon,
+  Heading,
+  Icon,
 } from '@chakra-ui/react';
 import { CheckIcon } from '@chakra-ui/icons';
+import { GiRibbonMedal } from 'react-icons/gi';
+
 import Consultation from './Consultation';
-import Locations from './Locations';
+import BottomSection from './BottomSection';
 function BackgroundComp() {
   return (
     <Flex h={'100vh'} flexDirection={'column'}>
@@ -43,10 +47,12 @@ function BackgroundComp() {
           alignItems={'center'}
           //   border={'2px solid black'}
           flexDirection={'column'}
+          p={10}
         >
-          <Text fontWeight={'bold'} fontSize={'2xl'} color={'#003E5B'}>
-            Make the change today.
+          <Text fontWeight={'bold'} fontSize={'3xl'} color={'#003E5B'}>
+            Make the <br></br>change today.
           </Text>
+
           {/* <Button
             bg={'green.400'}
             rounded={'full'}
@@ -59,16 +65,26 @@ function BackgroundComp() {
           <Consultation />
         </Flex>
       </Box>
-      <Box
+
+      <BottomSection />
+      {/* <Box textAlign="center" py={10} px={6}>
+        <Icon as={GiRibbonMedal} boxSize={'50px'} color={'yellow.500'}></Icon>
+        <Heading as="h2" size="xl" mt={6} mb={2}>
+          NY's Largest Weight Loss Practice
+        </Heading>
+        <Text color={'gray.500'}>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </Text>
+      </Box> */}
+
+      {/* <Box
         bgColor={'#003E5B'}
         display={'flex'}
         justifyContent={'center'}
         flex={'1 1 auto'}
         color="whiteAlpha.900"
-        // display="flex"
-        // flexDirection={'column'}
-        // justifyContent={'center'}
-        // alignItems={'center'}
       >
         <Flex
           flexDirection={'column'}
@@ -96,10 +112,9 @@ function BackgroundComp() {
                 locations in NY area
               </ListItem>
             </List>
-            {/* <Locations /> */}
           </Flex>
         </Flex>
-      </Box>
+      </Box> */}
     </Flex>
   );
 }

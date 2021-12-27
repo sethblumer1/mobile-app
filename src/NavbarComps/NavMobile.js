@@ -22,6 +22,7 @@ import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
 
 const Links = [
   'Home',
+  'Locations & Hours',
   'Meet Our Doctors',
   'Locations',
   'Tips & Tricks',
