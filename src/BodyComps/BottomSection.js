@@ -17,22 +17,21 @@ function StatsCard(props) {
   const { title, stat, icon } = props;
   return (
     <Stat
-      px={{ base: 12, md: 4 }}
+      px={{ base: 10, md: 4 }}
       py={'2'}
       shadow={'xl'}
-      //   border={'1px solid'}
-      //   borderColor={useColorModeValue('gray.800', 'gray.500')}
+      border={'2px solid'}
+      borderColor={'white'}
       rounded={'lg'}
-      bgColor={'white'}
-      color={'#003E5B'}
+      color={'white'}
     >
       <Flex justifyContent={'space-between'}>
-        <Box pl={{ base: 2, md: 4 }}>
-          <StatLabel fontWeight={'medium'} isTruncated>
+        <Box pl={{ base: 2, md: 4 }} display={'flex'} w={'80%'}>
+          {/* <StatLabel fontWeight={'medium'} isTruncated>
             {title}
-          </StatLabel>
+          </StatLabel> */}
           <StatNumber fontSize={'2xl'} fontWeight={'medium'}>
-            {stat}
+            {stat} {title}
           </StatNumber>
         </Box>
         <Box
@@ -61,7 +60,7 @@ export default function BottomSection() {
     >
       <chakra.h1
         textAlign={'center'}
-        fontSize={'4xl'}
+        fontSize={'3xl'}
         py={2}
         fontWeight={'bold'}
         color={'white'}
@@ -76,17 +75,17 @@ export default function BottomSection() {
         <StatsCard
           title={'Patients Treated'}
           stat={'18k'}
-          icon={<BsPerson size={'2em'} color={'#003E5B'} />}
+          icon={<BsPerson size={'2em'} color={'white'} />}
         />
         <StatsCard
           title={'Years of Service'}
           stat={'50'}
-          icon={<MdWork size={'2em'} color={'#003E5B'} />}
+          icon={<MdWork size={'2em'} color={'white'} />}
         />
         <StatsCard
           title={'NY Locations'}
           stat={'4'}
-          icon={<GoLocation size={'2em'} color={'#003E5B'} />}
+          icon={<GoLocation size={'2em'} color={'white'} />}
         />
       </SimpleGrid>
     </Flex>

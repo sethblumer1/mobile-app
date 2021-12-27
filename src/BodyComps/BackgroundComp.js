@@ -15,12 +15,15 @@ import {
   ListIcon,
   Heading,
   Icon,
+  chakra,
 } from '@chakra-ui/react';
-import { CheckIcon } from '@chakra-ui/icons';
-import { GiRibbonMedal } from 'react-icons/gi';
+import { BsPerson } from 'react-icons/bs';
+import { MdWork } from 'react-icons/md';
+import { GoLocation } from 'react-icons/go';
 
 import Consultation from './Consultation';
 import BottomSection from './BottomSection';
+import BottomCarousel from './BottomCarousel';
 function BackgroundComp() {
   return (
     <Flex h={'100vh'} flexDirection={'column'}>
@@ -53,31 +56,53 @@ function BackgroundComp() {
             Make the <br></br>change today.
           </Text>
 
-          {/* <Button
-            bg={'green.400'}
-            rounded={'full'}
-            color={'white'}
-            _hover={{ bg: 'green.500' }}
-            w={'50%'}
-          >
-            Request consultation
-          </Button> */}
           <Consultation />
         </Flex>
       </Box>
+      {/* <BottomCarousel /> */}
+      {/* <BottomSection /> */}
+      {/* <BottomCarousel /> */}
 
-      <BottomSection />
-      {/* <Box textAlign="center" py={10} px={6}>
-        <Icon as={GiRibbonMedal} boxSize={'50px'} color={'yellow.500'}></Icon>
-        <Heading as="h2" size="xl" mt={6} mb={2}>
-          NY's Largest Weight Loss Practice
+      <Box
+        textAlign="center"
+        px={6}
+        bgColor={'#003E5B'}
+        display={'flex'}
+        flexDirection={'column'}
+        justifyContent={'space-around'}
+        flex={'1 1 auto'}
+      >
+        <Heading as="h2" size="xl" mt={6} color={'white'} fontStyle={'italic'}>
+          NY's #1 Weight Loss Practice
         </Heading>
-        <Text color={'gray.500'}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </Text>
-      </Box> */}
+        <Flex justifyContent={'center'} alignItems={'center'}>
+          <Flex
+            flexDirection={'column'}
+            w={'33%'}
+            alignItems={'center'}
+            justifyContent={'space-between'}
+            // p={3}
+            mr={3}
+          >
+            <Icon as={BsPerson} color="white" w={7} h={7} />
+            <Text color="white" pt={2} fontSize={'lg'}>
+              Over 18k satisfied patients
+            </Text>
+          </Flex>
+          <Flex flexDirection={'column'} w={'33%'} alignItems={'center'} p={4}>
+            <Icon as={MdWork} color="white" w={7} h={7} />
+            <Text color="white" pt={2} fontSize={'lg'}>
+              50+ years of service
+            </Text>
+          </Flex>
+          <Flex flexDirection={'column'} w={'33%'} alignItems={'center'} p={4}>
+            <Icon as={GoLocation} color="white" w={7} h={7} />
+            <Text color="white" pt={2} fontSize={'lg'}>
+              4 New York locations
+            </Text>
+          </Flex>
+        </Flex>
+      </Box>
 
       {/* <Box
         bgColor={'#003E5B'}
@@ -92,7 +117,16 @@ function BackgroundComp() {
           alignItems={'center'}
           flexDirection={'row'}
         >
-          <Flex flexDirection={'column'}>
+          <chakra.h1
+            textAlign={'center'}
+            fontSize={'3xl'}
+            py={2}
+            fontWeight={'bold'}
+            color={'white'}
+          >
+            NY's Largest Weight Loss Practice
+          </chakra.h1> */}
+      {/* <Flex flexDirection={'column'}>
             <Text fontSize={'lg'} fontWeight={'bold'}>
               NY'S LARGEST WEIGHT LOSS PRACTICE
             </Text>
@@ -112,8 +146,8 @@ function BackgroundComp() {
                 locations in NY area
               </ListItem>
             </List>
-          </Flex>
-        </Flex>
+          </Flex> */}
+      {/* </Flex>
       </Box> */}
     </Flex>
   );
