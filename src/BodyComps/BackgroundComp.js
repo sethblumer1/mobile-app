@@ -53,7 +53,7 @@ function BackgroundComp() {
           p={10}
         >
           <Text fontWeight={'bold'} fontSize={'3xl'} color={'#003E5B'}>
-            Make the <br></br>change today.
+            Make the <br></br>Change, Today.
           </Text>
 
           <Consultation />
