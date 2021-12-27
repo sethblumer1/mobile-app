@@ -49,7 +49,7 @@ export default function NavMobile() {
 
   return (
     <>
-      <Box bg={'#F1F1F1'} px={4}>
+      <Box bg={'white'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -88,7 +88,7 @@ export default function NavMobile() {
             </Text>
           </Flex>
 
-          <Button borderRadius={'8px'} padding={0}>
+          <Button borderRadius={'8px'} padding={0} bgColor={'transparent'}>
             <Image
               src="https://www.freeiconspng.com/uploads/spain-flag-icon-10.png"
               width={'25px'}

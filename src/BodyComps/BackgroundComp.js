@@ -26,9 +26,10 @@ function BackgroundComp() {
         alignItems={'center'}
         minHeight={'60%'}
         bgColor={'white'}
-        backgroundImage={'url(https://i.ibb.co/Dw13KCt/scale-more-faded.png)'}
+        backgroundImage={'url(https://i.ibb.co/h9Z5FB3/weight.jpg)'}
         backgroundSize={'cover'}
-        backgroundPosition={'center center'}
+        backgroundPosition={'bottom center'}
+        // backgroundPosition={'200px'}
       >
         {' '}
         {/* <Text fontSize={'md'} fontWeight={'bold'}>
