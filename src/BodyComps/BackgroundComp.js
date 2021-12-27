@@ -67,6 +67,7 @@ function BackgroundComp() {
         textAlign="center"
         px={6}
         bgColor={'#003E5B'}
+        bgGradient="linear(to-t, #003e5b,#4E95A9)"
         display={'flex'}
         flexDirection={'column'}
         justifyContent={'space-around'}
