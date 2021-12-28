@@ -17,15 +17,20 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Icon,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
+import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
 
 const Links = [
   'Home',
-  'Locations & Hours',
   'Meet Our Doctors',
   'Tips & Tricks',
   'BMI Calculator',
+  <Flex justifyContent={'center'}>
+    <Icon as={FaFacebookSquare} mr={2} />
+    <Icon as={FaInstagram} ml={2} />
+  </Flex>,
 ];
 
 const NavLink = ({ children }) => (
@@ -33,10 +38,11 @@ const NavLink = ({ children }) => (
     px={2}
     py={1}
     rounded={'md'}
+    color={'#003E5B'}
     _hover={{
       textDecoration: 'none',
       color: '#4E95A9',
-      //   bg: useColorModeValue('gray.200', 'gray.700'),
+      // bg: useColorModeValue('gray.200', 'gray.700'),
     }}
     href={'#'}
   >
@@ -49,7 +55,7 @@ export default function NavMobile() {
 
   return (
     <>
-      <Box bg={'white'} px={4}>
+      <Box bg={'#F8F8F8'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -59,6 +65,7 @@ export default function NavMobile() {
             onClick={isOpen ? onClose : onOpen}
             // bg={'#4E95A9'}
             bgColor={'#003E5B'}
+            // bgGradient="linear(to-r,#4E95A9,#008ed1)"
             color={'whiteAlpha.900'}
           />
           <HStack spacing={8} alignItems={'center'}>
@@ -73,6 +80,7 @@ export default function NavMobile() {
                 <NavLink key={link}>{link}</NavLink>
               ))}
             </HStack>
+
             {/* <Text>Medical Weight Control</Text> */}
           </HStack>
           <Flex alignItems={'center'} justifyContent={'center'} width={'100%'}>
@@ -90,8 +98,8 @@ export default function NavMobile() {
 
           <Button borderRadius={'8px'} padding={0} bgColor={'transparent'}>
             <Image
-              src="https://www.freeiconspng.com/uploads/spain-flag-icon-10.png"
-              width={'25px'}
+              src="https://cdn.countryflags.com/thumbs/spain/flag-round-250.png"
+              width={'22.5px'}
             />
           </Button>
           {/* <Flex alignItems={'center'}>

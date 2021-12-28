@@ -19,13 +19,12 @@ import {
   Input,
   ModalFooter,
   Textarea,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  NumberDecrementStepper,
-  NumberIncrementStepper,
+  InputGroup,
+  InputLeftElement,
   Select,
 } from '@chakra-ui/react';
+import { PhoneIcon, AtSignIcon } from '@chakra-ui/icons';
+import { BsPerson } from 'react-icons/bs';
 import { useDisclosure } from '@chakra-ui/react';
 import React from 'react';
 function Consultation() {
@@ -42,9 +41,8 @@ function Consultation() {
         rounded={'full'}
         color={'white'}
         _hover={{ bg: 'green.500' }}
-        size={'lg'}
       >
-        Request consultation
+        Request Appointment
       </Button>
       {/* <Button ml={4} ref={finalRef}>
         I'll receive focus on close
@@ -58,26 +56,56 @@ function Consultation() {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Consultation Form</ModalHeader>
+          <ModalHeader>Appointment Form</ModalHeader>
           <ModalCloseButton />
-          <ModalBody pb={1}>
-            <FormControl>
-              <FormLabel>First name</FormLabel>
-              <Input ref={initialRef} placeholder="First name" />
+          <ModalBody pb={0}>
+            <FormControl mt={2} id="name">
+              <FormLabel>Name</FormLabel>
+              <InputGroup borderColor="#E0E1E7">
+                <InputLeftElement
+                  pointerEvents="none"
+                  children={<BsPerson fontSize="1.2em" color="#C9CACF" />}
+                />
+                <Input
+                  type="text"
+                  size="md"
+                  placeholder="Enter your full name"
+                />
+              </InputGroup>
             </FormControl>
 
-            <FormControl mt={4}>
-              <FormLabel>Last name</FormLabel>
-              <Input placeholder="Last name" />
+            <FormControl mt={2} id="email">
+              <FormLabel>Mail</FormLabel>
+              <InputGroup borderColor="#E0E1E7">
+                <InputLeftElement
+                  pointerEvents="none"
+                  children={<AtSignIcon color="#C9CACF" />}
+                />
+                <Input type="text" size="md" placeholder="example@email.com" />
+              </InputGroup>
             </FormControl>
 
-            <FormControl mt={4}>
-              <FormLabel>E-mail</FormLabel>
-              <Input placeholder="E-mail" />
+            <FormControl mt={2}>
+              <FormLabel>Phone Number</FormLabel>
+              <InputGroup>
+                <InputLeftElement
+                  pointerEvents="none"
+                  children={<PhoneIcon color="#C9CACF" />}
+                />
+                <Input type="tel" placeholder="+1 (___) __-___-___" />
+              </InputGroup>
             </FormControl>
 
-            <FormControl mt={4}>
-              <FormLabel>Desired appointment date & time</FormLabel>
+            <FormControl mt={2}>
+              <FormLabel>Location</FormLabel>
+              <Select variant="outline" placeholder="Uptown Manhattan">
+                <option value="Queens">Queens</option>
+                <option value="West Hempstead">West Hempstead</option>
+              </Select>
+            </FormControl>
+
+            <FormControl mt={2}>
+              <FormLabel>Desired Date and Time</FormLabel>
               <Stack shouldWrapChildren direction="row">
                 <Select variant="outline" placeholder="1">
                   <option value="2">2</option>
@@ -117,19 +145,9 @@ function Consultation() {
                 </Select>
                 <Input placeholder="HH:MM" w={'100px'}></Input>
               </Stack>
-
-              {/* <Stack shouldWrapChildren direction="row"> */}
-              {/* <NumberInput size="sm" maxW={20} defaultValue={12} min={1}>
-                  <NumberInputField />
-                  <NumberInputStepper>
-                    <NumberIncrementStepper />
-                    <NumberDecrementStepper />
-                  </NumberInputStepper>
-                </NumberInput> */}
-              {/* </Stack> */}
             </FormControl>
 
-            <FormControl mt={4}>
+            <FormControl mt={2}>
               <FormLabel>Reason for reaching out:</FormLabel>
               <Textarea
                 borderColor="gray.300"

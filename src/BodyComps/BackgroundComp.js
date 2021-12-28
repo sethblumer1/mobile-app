@@ -24,6 +24,7 @@ import { GoLocation } from 'react-icons/go';
 import Consultation from './Consultation';
 import BottomSection from './BottomSection';
 import BottomCarousel from './BottomCarousel';
+import HoursLocations from '../FooterComps/HoursLocations';
 function BackgroundComp() {
   return (
     <Flex h={'100vh'} flexDirection={'column'}>
@@ -34,9 +35,14 @@ function BackgroundComp() {
         alignItems={'center'}
         minHeight={'60%'}
         bgColor={'white'}
-        backgroundImage={'url(https://i.ibb.co/x3GDmQb/mobile-fruit-bg.jpg)'}
+        // backgroundImage={'url(https://i.ibb.co/x3GDmQb/mobile-fruit-bg.jpg)'}
+        // backgroundImage={
+        //   'url(https://i.ibb.co/W57ZP3z/web-bg-fruit-updated.jpg)'
+        // }
+        backgroundImage={'url(https://i.ibb.co/VwgCQ46/Site-Background-3.jpg)'}
         backgroundSize={'cover'}
-        backgroundPosition={'bottom center'}
+        backgroundPosition={'46%'}
+        // backgroundPosition={'bottom center'}
         // backgroundPosition={'200px'}
       >
         {' '}
@@ -103,9 +109,16 @@ function BackgroundComp() {
             </Text>
           </Flex>
         </Flex>
+        <HoursLocations />
       </Box>
+    </Flex>
+  );
+}
 
-      {/* <Box
+export default BackgroundComp;
+
+{
+  /* <Box
         bgColor={'#003E5B'}
         display={'flex'}
         justifyContent={'center'}
@@ -126,8 +139,10 @@ function BackgroundComp() {
             color={'white'}
           >
             NY's Largest Weight Loss Practice
-          </chakra.h1> */}
-      {/* <Flex flexDirection={'column'}>
+          </chakra.h1> */
+}
+{
+  /* <Flex flexDirection={'column'}>
             <Text fontSize={'lg'} fontWeight={'bold'}>
               NY'S LARGEST WEIGHT LOSS PRACTICE
             </Text>
@@ -147,11 +162,9 @@ function BackgroundComp() {
                 locations in NY area
               </ListItem>
             </List>
-          </Flex> */}
-      {/* </Flex>
-      </Box> */}
-    </Flex>
-  );
+          </Flex> */
 }
-
-export default BackgroundComp;
+{
+  /* </Flex>
+      </Box> */
+}
